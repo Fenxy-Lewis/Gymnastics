@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="post-page-title">Story — AthleteVerse</title>
+  <meta name="description" id="post-meta-desc" content="Read the full story on AthleteVerse — elite gymnastics training, fitness, and athletic lifestyle content." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" id="post-canonical" href="https://example.com/pages/post.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url"   id="og-url"   content="https://example.com/pages/post.html" />
+  <meta property="og:title" id="og-title" content="Story — AthleteVerse" />
+  <meta property="og:description" id="og-desc" content="Read the full story on AthleteVerse." />
+  <meta property="og:image"       id="og-image" content="https://picsum.photos/seed/gym-training-01/1200/630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+    /* Post-specific styles */
+    .post-hero-img {
+      width: 100%;
+      max-height: 520px;
+      object-fit: cover;
+      border-radius: var(--r-2xl);
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow-lg);
+    }
+    .post-header { margin-bottom: 2rem; }
+    .post-title {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: var(--fw-black);
+      letter-spacing: -0.04em;
+      line-height: 1.15;
+      color: var(--c-text-primary);
+      margin: 0.75rem 0 1.25rem;
+    }
+    .post-meta-bar {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.875rem;
+      color: var(--c-text-muted);
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--c-border);
+      margin-bottom: 1.75rem;
+    }
+    .post-meta-bar span { display: flex; align-items: center; gap: 0.3rem; }
+    .post-meta-bar svg { width: 14px; height: 14px; }
+  </style>
+  <script>(function(){var t=localStorage.getItem("av-theme");if(!t)t=window.matchMedia("(prefers-color-scheme:light)").matches?"light":"dark";document.documentElement.setAttribute("data-theme",t);})();</script>
+</head>
+<body>
+  <header class="site-header" id="site-header" role="banner">
+    <div class="header-search-bar" id="header-search-bar" role="search"><div class="search-input-wrap" style="max-width:540px;flex:1"><div class="search-input-icon" aria-hidden="true"><i data-lucide="search" stroke-width="1.5"></i></div><input type="search" class="header-search-input" id="header-search-input" placeholder="Search…" aria-label="Search" autocomplete="off" /></div><button class="header-icon-btn" id="search-bar-close" aria-label="Close search"><i data-lucide="x" stroke-width="2"></i></button></div>
+    <div class="container"><div class="header-inner">
+      <a href="../index.html" class="site-logo"><div class="site-logo__icon"><i data-lucide="zap" stroke-width="2.5"></i></div><span data-site-name>AthleteVerse</span></a>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="../index.html"   class="nav-link">Home</a><a href="trending.html" class="nav-link">Trending</a><a href="latest.html" class="nav-link">Latest</a><a href="gymnastics.html" class="nav-link">Gymnastics</a><a href="fitness.html" class="nav-link">Fitness</a><a href="lifestyle.html" class="nav-link">Lifestyle</a><a href="videos.html" class="nav-link">Videos</a><a href="gallery.html" class="nav-link">Gallery</a>
+      </nav>
+      <div class="header-actions"><button class="header-icon-btn" id="search-toggle" aria-label="Open search" aria-expanded="false"><i data-lucide="search" stroke-width="1.5"></i></button><button class="header-icon-btn" data-theme-toggle aria-label="Toggle theme"><span class="icon-sun" aria-hidden="true"><i data-lucide="sun" stroke-width="1.5"></i></span><span class="icon-moon" aria-hidden="true"><i data-lucide="moon" stroke-width="1.5"></i></span></button><button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false"><i data-lucide="menu" stroke-width="1.5"></i></button></div>
+    </div></div>
+  </header>
+  <div class="menu-overlay" id="mobile-menu-overlay" aria-hidden="true"></div>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <div class="mobile-menu__header"><a href="../index.html" class="site-logo"><div class="site-logo__icon"><i data-lucide="zap" stroke-width="2.5"></i></div><span>AthleteVerse</span></a><button class="mobile-menu__close" id="mobile-menu-close" aria-label="Close menu"><i data-lucide="x" stroke-width="2"></i></button></div>
+    <div class="mobile-menu__nav"><a href="../index.html" class="mobile-nav-link"><i data-lucide="home" stroke-width="1.5"></i> Home</a><a href="trending.html" class="mobile-nav-link"><i data-lucide="trending-up" stroke-width="1.5"></i> Trending</a><a href="latest.html" class="mobile-nav-link"><i data-lucide="clock" stroke-width="1.5"></i> Latest</a><a href="gymnastics.html" class="mobile-nav-link"><i data-lucide="activity" stroke-width="1.5"></i> Gymnastics</a><a href="fitness.html" class="mobile-nav-link"><i data-lucide="dumbbell" stroke-width="1.5"></i> Fitness</a><a href="lifestyle.html" class="mobile-nav-link"><i data-lucide="sun" stroke-width="1.5"></i> Lifestyle</a><a href="videos.html" class="mobile-nav-link"><i data-lucide="video" stroke-width="1.5"></i> Videos</a><a href="gallery.html" class="mobile-nav-link"><i data-lucide="image" stroke-width="1.5"></i> Gallery</a></div>
+    <div class="mobile-menu__footer"><button class="btn btn--ghost" style="width:100%;justify-content:center;" data-theme-toggle><span class="icon-sun" aria-hidden="true"><i data-lucide="sun" stroke-width="1.5"></i></span><span class="icon-moon" aria-hidden="true"><i data-lucide="moon" stroke-width="1.5"></i></span> Switch Mode</button></div>
+  </nav>
+
+  <main id="main-content" style="padding-top:var(--header-h);">
+
+    <!-- Top Banner Ad -->
+    <div class="container" style="padding-block:1.5rem;">
+      <div class="ad-zone ad-zone--top-banner" id="adsterra-top-banner" aria-label="Advertisement"><div class="ad-placeholder"><i data-lucide="layout" stroke-width="1" aria-hidden="true"></i><p>728×90 Banner Ad</p></div></div>
+    </div>
+
+    <div class="container">
+      <div class="post-layout" id="post-layout" style="padding-block:2rem 4rem;">
+
+        <!-- MAIN CONTENT -->
+        <article id="post-main" itemscope itemtype="https://schema.org/Article">
+          <!-- Rendered by JS -->
+          <div class="skeleton" style="height:400px;border-radius:1.5rem;margin-bottom:2rem;"></div>
+          <div class="skeleton" style="height:32px;width:60%;border-radius:8px;margin-bottom:1rem;"></div>
+          <div class="skeleton" style="height:20px;width:100%;border-radius:6px;margin-bottom:.5rem;"></div>
+          <div class="skeleton" style="height:20px;width:85%;border-radius:6px;margin-bottom:.5rem;"></div>
+          <div class="skeleton" style="height:20px;width:90%;border-radius:6px;"></div>
+        </article>
+
+        <!-- SIDEBAR -->
+        <aside id="post-sidebar" aria-label="Sidebar content">
+          <!-- Rendered by JS -->
+        </aside>
+
+      </div>
+    </div>
+
+    <!-- Social Bar -->
+    <div class="ad-zone ad-zone--social" id="adsterra-social" aria-label="Advertisement"><div class="ad-placeholder"><p>Adsterra Social Bar</p></div></div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="../index.html" class="site-logo"><div class="site-logo__icon"><i data-lucide="zap" stroke-width="2.5"></i></div><span data-site-name>AthleteVerse</span></a><p>Premier destination for gymnastics, fitness, and athletic lifestyle content.</p><div class="footer-social"><a href="#" class="social-btn" aria-label="Facebook"><i data-lucide="facebook" stroke-width="1.5"></i></a><a href="#" class="social-btn" aria-label="Instagram"><i data-lucide="instagram" stroke-width="1.5"></i></a><a href="#" class="social-btn" aria-label="YouTube"><i data-lucide="youtube" stroke-width="1.5"></i></a><a href="#" class="social-btn" aria-label="X (Twitter)"><i data-lucide="twitter" stroke-width="1.5"></i></a></div></div>
+        <div><h3 class="footer-heading">Navigate</h3><ul class="footer-links"><li><a href="../index.html" class="footer-link">Home</a></li><li><a href="trending.html" class="footer-link">Trending</a></li><li><a href="latest.html" class="footer-link">Latest</a></li><li><a href="videos.html" class="footer-link">Videos</a></li><li><a href="gallery.html" class="footer-link">Gallery</a></li></ul></div>
+        <div><h3 class="footer-heading">Categories</h3><ul class="footer-links"><li><a href="gymnastics.html" class="footer-link">Gymnastics</a></li><li><a href="fitness.html" class="footer-link">Fitness</a></li><li><a href="lifestyle.html" class="footer-link">Lifestyle</a></li></ul></div>
+        <div><h3 class="footer-heading">Company</h3><ul class="footer-links"><li><a href="about.html" class="footer-link">About Us</a></li><li><a href="contact.html" class="footer-link">Contact</a></li><li><a href="privacy.html" class="footer-link">Privacy Policy</a></li><li><a href="terms.html" class="footer-link">Terms of Service</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; <span id="footer-year">2026</span> AthleteVerse. All rights reserved.</p><div class="footer-bottom-links"><a href="privacy.html" class="footer-bottom-link">Privacy</a><a href="terms.html" class="footer-bottom-link">Terms</a><a href="contact.html" class="footer-bottom-link">Contact</a></div></div>
+    </div>
+  </footer>
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top"><i data-lucide="chevron-up" stroke-width="2" aria-hidden="true"></i></button>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="../js/data.js"></script><script src="../js/theme.js"></script><script src="../js/ads.js"></script><script src="../js/gallery.js"></script><script src="../js/app.js"></script>
+  <script>
+    document.getElementById("footer-year").textContent = new Date().getFullYear();
+    (function(){ var btn=document.getElementById("scroll-top"); if(!btn) return; window.addEventListener("scroll",function(){btn.classList.toggle("visible",window.scrollY>400);},{passive:true}); btn.addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"});}); })();
+
+    document.addEventListener("DOMContentLoaded", function() {
+      var app = window.AthleteVerseApp;
+      if (!app || typeof ALL_CONTENT === "undefined") return;
+
+      // Get post ID from URL query param
+      var params = new URLSearchParams(window.location.search);
+      var id = params.get("id");
+
+      // Find item
+      var item = ALL_CONTENT.find(function(i){ return i.id === id; }) || ALL_CONTENT[0];
+      var isVideo = item.category === "videos";
+
+      // Update SEO metadata
+      document.getElementById("post-page-title").textContent = item.title + " — AthleteVerse";
+      document.getElementById("post-meta-desc").setAttribute("content", item.description.slice(0, 160));
+      document.getElementById("og-title").setAttribute("content", item.title + " — AthleteVerse");
+      document.getElementById("og-desc").setAttribute("content", item.description.slice(0, 160));
+      document.getElementById("og-image").setAttribute("content", item.image);
+
+      // Determine category page URL
+      var catPageMap = { gymnastics:"gymnastics.html", fitness:"fitness.html", lifestyle:"lifestyle.html", videos:"videos.html", gallery:"gallery.html" };
+      var catHref = catPageMap[item.category] || "trending.html";
+
+      // Generate article body paragraphs
+      var bodyParagraphs = [
+        item.description,
+        "Every elite training session begins with preparation — both physical and mental. The athletes arrive early, working through a structured warm-up sequence that addresses mobility, activation, and mental readiness. This isn't wasted time; it's the foundation on which every high-quality training repetition is built.",
+        "The technical demands of this discipline require athletes to be precise, consistent, and adaptable. Coaches work alongside athletes to refine technique, identify errors in real time, and provide the kind of feedback that drives long-term improvement. It's a collaborative process, and the best training environments cultivate that partnership.",
+        "Recovery and restoration are built into every training block. Elite programs don't simply add more volume to get results — they manage stress and recovery in a carefully balanced system. Nutrition, sleep, and active recovery are taken as seriously as the sessions themselves.",
+        "The environment itself plays a role. The best training facilities create a culture of excellence — where high standards are the norm and every athlete is expected to hold themselves and their teammates to those standards. It's that culture, more than any single program or technique, that separates consistently excellent programs from the rest."
+      ];
+
+      // Related posts (same category, excluding current)
+      var related = ALL_CONTENT.filter(function(i){ return i.category === item.category && i.id !== item.id; }).slice(0, 3);
+
+      // Sidebar: trending
+      var sidebarTrending = (typeof TRENDING !== "undefined" ? TRENDING : ALL_CONTENT).filter(function(i){ return i.id !== item.id; }).slice(0, 4);
+
+      // Render main article
+      var main = document.getElementById("post-main");
+      main.innerHTML = `
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <i data-lucide="chevron-right" stroke-width="1.5" aria-hidden="true"></i>
+          <a href="${catHref}">${app.capitalize(item.category)}</a>
+          <i data-lucide="chevron-right" stroke-width="1.5" aria-hidden="true"></i>
+          <span aria-current="page">${app.truncate(item.title, 40)}</span>
+        </nav>
+
+        <!-- Category badge -->
+        <span class="badge badge--accent" itemprop="articleSection">${app.capitalize(item.category)}</span>
+
+        <!-- Headline -->
+        <h1 class="post-title" itemprop="headline" id="post-heading">${app.escapeHtml(item.title)}</h1>
+
+        <!-- Meta bar -->
+        <div class="post-meta-bar" aria-label="Post details">
+          <span><i data-lucide="eye" stroke-width="1.5"></i> <span itemprop="interactionCount">${formatViews(item.views)}</span> views</span>
+          <span><i data-lucide="calendar" stroke-width="1.5"></i> <time itemprop="datePublished" datetime="${item.date}">${formatDate(item.date)}</time></span>
+          ${isVideo && item.duration ? `<span><i data-lucide="clock" stroke-width="1.5"></i> ${item.duration}</span>` : ""}
+          <span><i data-lucide="tag" stroke-width="1.5"></i> ${item.tags ? item.tags.slice(0,3).join(", ") : ""}</span>
+        </div>
+
+        <!-- Hero image -->
+        <img
+          src="${item.image.replace('/800/', '/1200/').replace('/600','/700').replace('/450','/600')}"
+          alt="${app.escapeHtml(item.imageAlt || item.title)}"
+          class="post-hero-img"
+          width="1200" height="600"
+          fetchpriority="high"
+          itemprop="image"
+        />
+
+        ${isVideo ? `
+        <!-- Video placeholder (replace with embed when live) -->
+        <div style="background:var(--c-surface-2);border-radius:var(--r-xl);aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;margin-bottom:1.75rem;border:1px solid var(--c-border);">
+          <div style="text-align:center;color:var(--c-text-muted);">
+            <i data-lucide="play-circle" stroke-width="1" style="width:64px;height:64px;display:block;margin:0 auto 0.75rem;"></i>
+            <p style="font-size:.9375rem;">Video Player Placeholder</p>
+            <button class="btn btn--primary" data-smartlink style="margin-top:1rem;" aria-label="Watch Now — opens video content">
+              <i data-lucide="play" stroke-width="2"></i> Watch Now
+            </button>
+          </div>
+        </div>` : ""}
+
+        <!-- Article body -->
+        <div class="article-content" itemprop="articleBody">
+          ${bodyParagraphs.map(function(p){ return `<p>${app.escapeHtml(p)}</p>`; }).join("")}
+
+          <h2>Behind the Training</h2>
+          <p>What separates elite-level training from recreational participation is not just the volume or intensity — it's the attention to detail. Every element of the training session, from the order of exercises to the duration of rest intervals, is deliberate and backed by evidence-based coaching practice.</p>
+
+          <blockquote>
+            "The difference between good and great is often in the details that most people overlook — the preparation, the recovery, and the consistency applied over years of work."
+          </blockquote>
+
+          <h2>What to Take Away</h2>
+          <p>Whether you're a competitive athlete, a coach, or simply someone interested in how elite performance is built, there are universal lessons here. Consistency, preparation, recovery, and a culture of excellence are the common threads across every high-performing athletic program.</p>
+          <p>The training sessions documented here are not the exception — they are what daily life looks like for athletes pursuing excellence at the highest levels of their sport.</p>
+        </div>
+
+        <!-- Share buttons -->
+        <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--c-border);">
+          <div class="share-bar" aria-label="Share this story">
+            <span class="share-label">Share:</span>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://example.com/pages/post.html?id=' + item.id)}" class="share-btn share-btn--facebook" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook">
+              <i data-lucide="facebook" stroke-width="1.5"></i> <span>Facebook</span>
+            </a>
+            <a href="https://twitter.com/intent/tweet?url=${encodeURIComponent('https://example.com/pages/post.html?id=' + item.id)}&text=${encodeURIComponent(item.title)}" class="share-btn share-btn--twitter" target="_blank" rel="noopener noreferrer" aria-label="Share on X (Twitter)">
+              <i data-lucide="twitter" stroke-width="1.5"></i> <span>X</span>
+            </a>
+            <a href="https://t.me/share/url?url=${encodeURIComponent('https://example.com/pages/post.html?id=' + item.id)}&text=${encodeURIComponent(item.title)}" class="share-btn share-btn--telegram" target="_blank" rel="noopener noreferrer" aria-label="Share on Telegram">
+              <i data-lucide="send" stroke-width="1.5"></i> <span>Telegram</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- In-content ad -->
+        <div style="margin-top:2rem;">
+          <div class="ad-zone" id="adsterra-content-banner" aria-label="Advertisement"><div class="ad-placeholder"><i data-lucide="layout" stroke-width="1" aria-hidden="true"></i><p>728×90 In-Content Banner</p></div></div>
+        </div>
+
+        <!-- Related posts -->
+        ${related.length > 0 ? `
+        <div style="margin-top:3rem;">
+          <h2 style="font-size:1.375rem;font-weight:700;letter-spacing:-0.025em;margin-bottom:1.25rem;color:var(--c-text-primary);">Related Stories</h2>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;">
+            ${related.map(function(r){ return app.buildCard(r, {pathPrefix:""}); }).join("")}
+          </div>
+        </div>` : ""}
+
+        <!-- Watch Now Smartlink CTA -->
+        <div style="display:flex;justify-content:center;margin-top:3rem;">
+          <button class="btn btn--primary btn--xl" data-smartlink aria-label="Watch Now — opens content">
+            <i data-lucide="play-circle" stroke-width="1.5" aria-hidden="true"></i>
+            Watch Now
+          </button>
+        </div>
+      `;
+
+      // Render sidebar
+      var sidebar = document.getElementById("post-sidebar");
+      sidebar.innerHTML = `
+        <!-- Sidebar: Trending -->
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">Trending Now</h3>
+          ${sidebarTrending.map(function(r){
+            return `<a href="post.html?id=${r.id}" class="sidebar-card" style="text-decoration:none;">
+              <img src="${r.image}" alt="${app.escapeHtml(r.imageAlt || r.title)}" class="sidebar-card__img" loading="lazy" width="72" height="52" />
+              <div class="sidebar-card__body">
+                <p class="sidebar-card__title">${app.escapeHtml(r.title)}</p>
+                <p class="sidebar-card__meta"><i data-lucide="eye" stroke-width="1.5"></i> ${formatViews(r.views)}</p>
+              </div>
+            </a>`;
+          }).join("")}
+        </div>
+
+        <!-- Sidebar: 300×250 Ad -->
+        <div class="ad-zone ad-zone--sidebar" id="adsterra-sidebar" aria-label="Advertisement" style="min-height:280px;">
+          <div class="ad-placeholder"><i data-lucide="layout" stroke-width="1" aria-hidden="true"></i><p>300×250 Sidebar Ad</p></div>
+        </div>
+
+        <!-- Sidebar: Latest -->
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">Latest Stories</h3>
+          ${(typeof LATEST !== "undefined" ? LATEST : ALL_CONTENT).filter(function(i){ return i.id !== item.id; }).slice(0,4).map(function(r){
+            return `<a href="post.html?id=${r.id}" class="sidebar-card" style="text-decoration:none;">
+              <img src="${r.image}" alt="${app.escapeHtml(r.imageAlt || r.title)}" class="sidebar-card__img" loading="lazy" width="72" height="52" />
+              <div class="sidebar-card__body">
+                <p class="sidebar-card__title">${app.escapeHtml(r.title)}</p>
+                <p class="sidebar-card__meta"><i data-lucide="calendar" stroke-width="1.5"></i> ${formatDate(r.date)}</p>
+              </div>
+            </a>`;
+          }).join("")}
+        </div>
+      `;
+
+      // Re-init Lucide icons and ads
+      if (window.lucide) lucide.createIcons();
+      if (window.AthleteVerseApp) {
+        AthleteVerseApp.initHeaderScroll();
+        AthleteVerseApp.initMobileMenu();
+        AthleteVerseApp.initSearchToggle();
+      }
+      // Re-wire smartlink buttons
+      document.querySelectorAll("[data-smartlink]").forEach(function(el){
+        el.addEventListener("click", openSmartlink);
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- ── SEO ─────────────────────────────────────────────── -->
+  <title>AthleteVerse — Gymnastics, Fitness & Athletic Lifestyle Media</title>
+  <meta name="description"
+    content="AthleteVerse is your premier destination for gymnastics training, fitness culture, and athletic lifestyle content. Behind-the-scenes access to elite sport." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://example.com/" />
+
+  <!-- ── Open Graph ───────────────────────────────────────── -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com/" />
+  <meta property="og:title" content="AthleteVerse — Gymnastics, Fitness & Athletic Lifestyle" />
+  <meta property="og:description"
+    content="Behind-the-scenes access to elite gymnastics training, fitness culture, and the athletic lifestyle. Premium sports media." />
+  <meta property="og:image" content="https://picsum.photos/seed/gym-training-01/1200/630" />
+
+  <!-- ── Twitter Card ─────────────────────────────────────── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AthleteVerse — Gymnastics, Fitness & Athletic Lifestyle" />
+  <meta name="twitter:description"
+    content="Behind-the-scenes access to elite gymnastics training, fitness culture, and the athletic lifestyle." />
+  <meta name="twitter:image" content="https://picsum.photos/seed/gym-training-01/1200/630" />
+
+  <!-- ── Structured Data: Website ─────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "AthleteVerse",
+    "url": "https://example.com/",
+    "description": "Premier destination for gymnastics training, fitness culture, and athletic lifestyle content.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://example.com/pages/search.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- ── Fonts & Icons ────────────────────────────────────── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- ── Stylesheets ──────────────────────────────────────── -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Theme init: runs before body paints to prevent FOUC -->
+  <script>
+    (function () {
+      var t = localStorage.getItem("av-theme");
+      if (!t) t = window.matchMedia("(prefers-color-scheme:light)").matches ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+</head>
+
+<body>
+
+  <!-- ════════════════════════════════════════════════════════
+       HEADER
+  ═════════════════════════════════════════════════════════ -->
+  <header class="site-header" id="site-header" role="banner">
+    <!-- Search bar overlay -->
+    <div class="header-search-bar" id="header-search-bar" role="search" aria-label="Site search">
+      <div class="search-input-wrap" style="max-width:540px;flex:1">
+        <div class="search-input-icon" aria-hidden="true">
+          <i data-lucide="search" stroke-width="1.5"></i>
+        </div>
+        <input type="search" class="header-search-input" id="header-search-input"
+          placeholder="Search gymnastics, fitness, lifestyle…" aria-label="Search content" autocomplete="off" />
+      </div>
+      <button class="header-icon-btn" id="search-bar-close" aria-label="Close search">
+        <i data-lucide="x" stroke-width="2"></i>
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="header-inner">
+
+        <!-- Logo -->
+        <a href="index.html" class="site-logo" aria-label="AthleteVerse — Home">
+          <div class="site-logo__icon" aria-hidden="true">
+            <i data-lucide="zap" stroke-width="2.5"></i>
+          </div>
+          <span data-site-name>AthleteVerse</span>
+        </a>
+
+        <!-- Desktop primary nav -->
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="index.html" class="nav-link" aria-current="page">Home</a>
+          <a href="pages/trending.html" class="nav-link">Trending</a>
+          <a href="pages/latest.html" class="nav-link">Latest</a>
+          <a href="pages/gymnastics.html" class="nav-link">Gymnastics</a>
+          <a href="pages/fitness.html" class="nav-link">Fitness</a>
+          <a href="pages/lifestyle.html" class="nav-link">Lifestyle</a>
+          <a href="pages/videos.html" class="nav-link">Videos</a>
+          <a href="pages/gallery.html" class="nav-link">Gallery</a>
+        </nav>
+
+        <!-- Header actions -->
+        <div class="header-actions">
+          <button class="header-icon-btn" id="search-toggle" aria-label="Open search" aria-expanded="false"
+            aria-controls="header-search-bar">
+            <i data-lucide="search" stroke-width="1.5"></i>
+          </button>
+          <button class="header-icon-btn" data-theme-toggle aria-label="Switch to light mode">
+            <span class="icon-sun" aria-hidden="true"><i data-lucide="sun" stroke-width="1.5"></i></span>
+            <span class="icon-moon" aria-hidden="true"><i data-lucide="moon" stroke-width="1.5"></i></span>
+          </button>
+          <!-- Mobile menu toggle (visible on tablet/mobile) -->
+          <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open navigation menu"
+            aria-expanded="false" aria-controls="mobile-menu">
+            <i data-lucide="menu" stroke-width="1.5"></i>
+          </button>
+        </div>
+
+      </div><!-- /header-inner -->
+    </div><!-- /container -->
+  </header>
+
+  <!-- Mobile menu overlay -->
+  <div class="menu-overlay" id="mobile-menu-overlay" aria-hidden="true"></div>
+
+  <!-- Mobile menu panel -->
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" role="navigation">
+    <div class="mobile-menu__header">
+      <a href="index.html" class="site-logo" aria-label="AthleteVerse — Home">
+        <div class="site-logo__icon" aria-hidden="true">
+          <i data-lucide="zap" stroke-width="2.5"></i>
+        </div>
+        <span>AthleteVerse</span>
+      </a>
+      <button class="mobile-menu__close" id="mobile-menu-close" aria-label="Close navigation menu">
+        <i data-lucide="x" stroke-width="2"></i>
+      </button>
+    </div>
+    <div class="mobile-menu__nav">
+      <a href="index.html" class="mobile-nav-link"><i data-lucide="home" stroke-width="1.5"></i> Home</a>
+      <a href="pages/trending.html" class="mobile-nav-link"><i data-lucide="trending-up" stroke-width="1.5"></i>
+        Trending</a>
+      <a href="pages/latest.html" class="mobile-nav-link"><i data-lucide="clock" stroke-width="1.5"></i> Latest</a>
+      <a href="pages/gymnastics.html" class="mobile-nav-link"><i data-lucide="activity" stroke-width="1.5"></i>
+        Gymnastics</a>
+      <a href="pages/fitness.html" class="mobile-nav-link"><i data-lucide="dumbbell" stroke-width="1.5"></i> Fitness</a>
+      <a href="pages/lifestyle.html" class="mobile-nav-link"><i data-lucide="sun" stroke-width="1.5"></i> Lifestyle</a>
+      <a href="pages/videos.html" class="mobile-nav-link"><i data-lucide="video" stroke-width="1.5"></i> Videos</a>
+      <a href="pages/gallery.html" class="mobile-nav-link"><i data-lucide="image" stroke-width="1.5"></i> Gallery</a>
+    </div>
+    <div class="mobile-menu__footer">
+      <button class="btn btn--ghost" style="width:100%;justify-content:center;" data-theme-toggle
+        aria-label="Toggle dark/light mode">
+        <span class="icon-sun" aria-hidden="true"><i data-lucide="sun" stroke-width="1.5"></i></span>
+        <span class="icon-moon" aria-hidden="true"><i data-lucide="moon" stroke-width="1.5"></i></span>
+        <span id="theme-label">Switch Mode</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════════════════════════════
+       MAIN CONTENT
+  ═════════════════════════════════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- ── HERO ─────────────────────────────────────────── -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <!-- JS renders hero content here -->
+        <div id="hero-container">
+          <!-- Fallback while JS loads -->
+          <div class="hero-content" style="opacity:0.4;pointer-events:none">
+            <div class="hero-text">
+              <div class="skeleton" style="height:28px;width:120px;border-radius:999px;"></div>
+              <div class="skeleton" style="height:72px;margin-top:1rem;border-radius:12px;"></div>
+              <div class="skeleton" style="height:80px;margin-top:.75rem;border-radius:12px;"></div>
+              <div style="display:flex;gap:.75rem;margin-top:1rem">
+                <div class="skeleton" style="height:48px;width:140px;border-radius:999px;"></div>
+                <div class="skeleton" style="height:48px;width:160px;border-radius:999px;"></div>
+              </div>
+            </div>
+            <div class="hero-visual">
+              <div class="skeleton" style="aspect-ratio:4/3;border-radius:1.5rem;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TOP BANNER AD ────────────────────────────────── -->
+    <!-- ADSTERRA TOP BANNER CODE -->
+    <div class="container" style="padding-block:1.5rem;">
+      <div class="ad-zone ad-zone--top-banner" id="adsterra-top-banner" aria-label="Advertisement">
+        <div class="ad-placeholder">
+          <i data-lucide="layout" stroke-width="1" aria-hidden="true"></i>
+          <p>728×90 Banner Ad</p>
+        </div>
+      </div>
+    </div>
+    <!-- /ADSTERRA TOP BANNER CODE -->
+
+    <!-- ── TRENDING ──────────────────────────────────────── -->
+    <section class="section" id="trending" aria-labelledby="trending-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-header__text">
+            <h2 class="section-title section-title--bar" id="trending-heading">
+              Trending Now
+            </h2>
+            <p class="section-subtitle">The most-viewed training and lifestyle content</p>
+          </div>
+          <a href="pages/trending.html" class="section-header__link" aria-label="View all trending content">
+            View All
+            <i data-lucide="arrow-right" stroke-width="1.5" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <!-- Filter bar -->
+        <div class="filter-bar" id="trending-filter-bar" role="group" aria-label="Filter by category">
+          <button class="filter-btn filter-btn--active" data-filter="all" type="button" aria-pressed="true">All</button>
+          <button class="filter-btn" data-filter="gymnastics" type="button" aria-pressed="false">Gymnastics</button>
+          <button class="filter-btn" data-filter="fitness" type="button" aria-pressed="false">Fitness</button>
+          <button class="filter-btn" data-filter="lifestyle" type="button" aria-pressed="false">Lifestyle</button>
+        </div>
+
+        <!-- Grid rendered by app.js -->
+        <div class="trending-grid stagger-children" id="trending-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ── FEATURED GALLERY ──────────────────────────────── -->
+    <section class="section" id="featured-gallery" aria-labelledby="gallery-heading"
+      style="background:var(--c-surface);border-top:1px solid var(--c-border);border-bottom:1px solid var(--c-border);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-header__text">
+            <h2 class="section-title section-title--bar" id="gallery-heading">
+              Featured Gallery
+            </h2>
+            <p class="section-subtitle">Photography from training sessions and behind the scenes</p>
+          </div>
+          <a href="pages/gallery.html" class="section-header__link" aria-label="View full gallery">
+            Explore Gallery
+            <i data-lucide="arrow-right" stroke-width="1.5" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <!-- Gallery grid rendered by app.js -->
+        <div class="featured-gallery-grid" id="featured-gallery-grid" aria-label="Featured photos gallery"></div>
+      </div>
+    </section>
+
+    <!-- ── IN-CONTENT BANNER AD ─────────────────────────── -->
+    <!-- ADSTERRA CONTENT BANNER CODE -->
+    <div class="container" style="padding-block:1.5rem;">
+      <div class="ad-zone" id="adsterra-content-banner" aria-label="Advertisement">
+        <div class="ad-placeholder">
+          <i data-lucide="layout" stroke-width="1" aria-hidden="true"></i>
+          <p>728×90 In-Content Banner</p>
+        </div>
+      </div>
+    </div>
+    <!-- /ADSTERRA CONTENT BANNER CODE -->
+
+    <!-- ── LATEST POSTS ──────────────────────────────────── -->
+    <section class="section" id="latest" aria-labelledby="latest-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-header__text">
+            <h2 class="section-title section-title--bar" id="latest-heading">
+              Latest Stories
+            </h2>
+            <p class="section-subtitle">Fresh from the training hall</p>
+          </div>
+          <a href="pages/latest.html" class="section-header__link" aria-label="View all latest stories">
+            View All
+            <i data-lucide="arrow-right" stroke-width="1.5" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <!-- Grid rendered by app.js -->
+        <div class="latest-grid stagger-children" id="latest-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ── VIDEOS ────────────────────────────────────────── -->
+    <section class="section" id="videos-section" aria-labelledby="videos-heading"
+      style="background:var(--c-surface);border-top:1px solid var(--c-border);border-bottom:1px solid var(--c-border);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-header__text">
+            <h2 class="section-title section-title--bar" id="videos-heading">
+              Video Library
+            </h2>
+            <p class="section-subtitle">In-depth training documentaries and tutorials</p>
+          </div>
+          <a href="pages/videos.html" class="section-header__link" aria-label="View all videos">
+            All Videos
+            <i data-lucide="arrow-right" stroke-width="1.5" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <!-- Videos grid rendered by app.js -->
+        <div class="videos-grid stagger-children" id="videos-grid"></div>
+
+        <!-- Watch Now Smartlink CTA -->
+        <div style="display:flex;justify-content:center;margin-top:2.5rem;">
+          <button class="btn btn--primary btn--xl" data-smartlink aria-label="Watch Now — opens video content">
+            <i data-lucide="play-circle" stroke-width="1.5" aria-hidden="true"></i>
+            Watch Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SOCIAL BAR AD ──────────────────────────────────── -->
+    <!-- ADSTERRA SOCIAL BAR CODE -->
+    <div class="ad-zone ad-zone--social" id="adsterra-social" aria-label="Advertisement">
+      <div class="ad-placeholder">
+        <p>Adsterra Social Bar Placement</p>
+      </div>
+    </div>
+    <!-- /ADSTERRA SOCIAL BAR CODE -->
+
+  </main>
+
+  <!-- ════════════════════════════════════════════════════════
+       FOOTER
+  ═════════════════════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="index.html" class="site-logo" aria-label="AthleteVerse — Home">
+            <div class="site-logo__icon" aria-hidden="true">
+              <i data-lucide="zap" stroke-width="2.5"></i>
+            </div>
+            <span data-site-name>AthleteVerse</span>
+          </a>
+          <p>Your premier destination for gymnastics training, fitness culture, and athletic lifestyle content.</p>
+          <div class="footer-social" aria-label="Social media links">
+            <a href="#" class="social-btn" aria-label="Follow on Facebook">
+              <i data-lucide="facebook" stroke-width="1.5"></i>
+            </a>
+            <a href="#" class="social-btn" aria-label="Follow on Instagram">
+              <i data-lucide="instagram" stroke-width="1.5"></i>
+            </a>
+            <a href="#" class="social-btn" aria-label="Subscribe on YouTube">
+              <i data-lucide="youtube" stroke-width="1.5"></i>
+            </a>
+            <a href="#" class="social-btn" aria-label="Follow on X (Twitter)">
+              <i data-lucide="twitter" stroke-width="1.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div>
+          <h3 class="footer-heading">Navigate</h3>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="pages/trending.html" class="footer-link">Trending</a></li>
+            <li><a href="pages/latest.html" class="footer-link">Latest</a></li>
+            <li><a href="pages/videos.html" class="footer-link">Videos</a></li>
+            <li><a href="pages/gallery.html" class="footer-link">Gallery</a></li>
+            <li><a href="pages/search.html" class="footer-link">Search</a></li>
+          </ul>
+        </div>
+
+        <!-- Categories -->
+        <div>
+          <h3 class="footer-heading">Categories</h3>
+          <ul class="footer-links">
+            <li><a href="pages/gymnastics.html" class="footer-link">Gymnastics</a></li>
+            <li><a href="pages/fitness.html" class="footer-link">Fitness</a></li>
+            <li><a href="pages/lifestyle.html" class="footer-link">Lifestyle</a></li>
+          </ul>
+        </div>
+
+        <!-- Company -->
+        <div>
+          <h3 class="footer-heading">Company</h3>
+          <ul class="footer-links">
+            <li><a href="pages/about.html" class="footer-link">About Us</a></li>
+            <li><a href="pages/contact.html" class="footer-link">Contact</a></li>
+            <li><a href="pages/privacy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="pages/terms.html" class="footer-link">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div><!-- /footer-grid -->
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="footer-year">2026</span> AthleteVerse. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="pages/privacy.html" class="footer-bottom-link">Privacy</a>
+          <a href="pages/terms.html" class="footer-bottom-link">Terms</a>
+          <a href="pages/contact.html" class="footer-bottom-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+    <i data-lucide="chevron-up" stroke-width="2" aria-hidden="true"></i>
+  </button>
+
+  <!-- ════════════════════════════════════════════════════════
+       SCRIPTS (load order matters)
+  ═════════════════════════════════════════════════════════ -->
+
+  <!-- Lucide Icons (UMD build) -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <!-- Site data (must be first) -->
+  <script src="js/data.js"></script>
+
+  <!-- Core modules -->
+  <script src="js/theme.js"></script>
+  <script src="js/ads.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/search.js"></script>
+
+  <!-- App (homepage renderer — must be last) -->
+  <script src="js/app.js"></script>
+
+  <!-- Inline page scripts -->
+  <script>
+    // Footer year
+    document.getElementById("footer-year").textContent = new Date().getFullYear();
+
+    // Scroll-to-top button
+    (function () {
+      var btn = document.getElementById("scroll-top");
+      if (!btn) return;
+      window.addEventListener("scroll", function () {
+        btn.classList.toggle("visible", window.scrollY > 400);
+      }, { passive: true });
+      btn.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    })();
+
+    // Trending filter (wired after app.js renders cards)
+    document.addEventListener("DOMContentLoaded", function () {
+      if (window.AthleteVerseGallery) {
+        AthleteVerseGallery.initFilters(
+          "#trending-grid",
+          "#trending-filter-bar"
+        );
+      }
+    });
+  </script>
+
+</body>
+
+</html>
